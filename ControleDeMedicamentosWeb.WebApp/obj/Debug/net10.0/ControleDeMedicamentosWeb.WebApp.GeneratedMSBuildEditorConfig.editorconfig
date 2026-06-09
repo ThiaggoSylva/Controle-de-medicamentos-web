@@ -77,3 +77,11 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloPaciente/Apresentacao/Views/Paciente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = TW9kdWxvUGFjaWVudGVcQXByZXNlbnRhY2FvXFZpZXdzXFBhY2llbnRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloPaciente/Apresentacao/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvUGFjaWVudGVcQXByZXNlbnRhY2FvXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloPaciente/Apresentacao/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvUGFjaWVudGVcQXByZXNlbnRhY2FvXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
