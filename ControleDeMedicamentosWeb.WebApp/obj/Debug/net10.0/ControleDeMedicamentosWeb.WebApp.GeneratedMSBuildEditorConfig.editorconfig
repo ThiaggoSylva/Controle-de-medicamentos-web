@@ -61,3 +61,19 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloFornecedor/Apresentacao/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = TW9kdWxvRm9ybmVjZWRvclxBcHJlc2VudGFjYW9cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloPaciente/Apresentacao/Views/Paciente/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvUGFjaWVudGVcQXByZXNlbnRhY2FvXFZpZXdzXFBhY2llbnRlXENhZGFzdHJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloPaciente/Apresentacao/Views/Paciente/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvUGFjaWVudGVcQXByZXNlbnRhY2FvXFZpZXdzXFBhY2llbnRlXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloPaciente/Apresentacao/Views/Paciente/Excluir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvUGFjaWVudGVcQXByZXNlbnRhY2FvXFZpZXdzXFBhY2llbnRlXEV4Y2x1aXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloPaciente/Apresentacao/Views/Paciente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvUGFjaWVudGVcQXByZXNlbnRhY2FvXFZpZXdzXFBhY2llbnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
