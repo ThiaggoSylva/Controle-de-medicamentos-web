@@ -1,0 +1,79 @@
+@model List<VisualizarFornecedorViewModel>
+
+@{
+    ViewBag.Titulo = "Fornecedores";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+
+    <h2>@ViewBag.Titulo</h2>
+
+    <a asp-action="Cadastrar"
+       class="btn btn-primary">
+
+        <i class="bi bi-plus-circle"></i>
+        Novo Fornecedor
+
+    </a>
+
+</div>
+
+<div class="card shadow-sm">
+
+    <div class="card-body">
+
+        <table class="table table-hover table-striped">
+
+            <thead>
+
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>CNPJ</th>
+                    <th width="180">Ações</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                @foreach (var fornecedor in Model)
+                {
+                    <tr>
+
+                        <td>@fornecedor.Nome</td>
+
+                        <td>@fornecedor.Telefone</td>
+
+                        <td>@fornecedor.Cnpj</td>
+
+                        <td>
+
+                            <a asp-action="Editar"
+                               asp-route-id="@fornecedor.Id"
+                               class="btn btn-sm btn-warning">
+
+                                <i class="bi bi-pencil"></i>
+
+                            </a>
+
+                            <a asp-action="Excluir"
+                               asp-route-id="@fornecedor.Id"
+                               class="btn btn-sm btn-danger">
+
+                                <i class="bi bi-trash"></i>
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
