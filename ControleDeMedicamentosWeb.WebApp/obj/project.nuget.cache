@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "RI1+lxZCDGI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\thiag\\Documents\\Academia 2026\\Controle-de-medicamentos-web\\ControleDeMedicamentosWeb.WebApp\\ControleDeMedicamentosWeb.WebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thiag\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\thiag\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\thiag\\.nuget\\packages\\fluentresults\\4.0.0\\fluentresults.4.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "projectPath": "C:\\Users\\thiag\\Documents\\Academia 2026\\Controle-de-medicamentos-web\\ControleDeMedicamentosWeb.WebApp\\ControleDeMedicamentosWeb.WebApp.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\thiag\\Documents\\Academia 2026\\Controle-de-medicamentos-web\\ControleDeMedicamentosWeb.WebApp\\ControleDeMedicamentosWeb.WebApp.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
