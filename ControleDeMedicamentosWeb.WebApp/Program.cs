@@ -55,7 +55,6 @@ ServicoFornecedor>();
 
 #endregion
 
-#region Paciente
 
 builder.Services.AddScoped<IRepositorioPaciente,
                            RepositorioPacienteEmArquivo>();
@@ -63,7 +62,13 @@ builder.Services.AddScoped<IRepositorioPaciente,
 builder.Services.AddScoped<IServicoPaciente,
                            ServicoPaciente>();
 
-#endregion
+builder.Services.AddScoped<IRepositorioPaciente,
+                           RepositorioPacienteEmArquivo>();
+
+builder.Services.AddScoped<IServicoPaciente,
+                           ServicoPaciente>();
+
+
 
 var app = builder.Build();
 

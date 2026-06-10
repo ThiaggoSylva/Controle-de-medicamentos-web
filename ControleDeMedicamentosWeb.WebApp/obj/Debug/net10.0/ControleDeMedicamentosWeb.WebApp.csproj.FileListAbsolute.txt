@@ -34,3 +34,4 @@ C:\Users\thiag\Documents\Academia 2026\Controle-de-medicamentos-web\ControleDeMe
 C:\Users\thiag\Documents\Academia 2026\Controle-de-medicamentos-web\ControleDeMedicamentosWeb.WebApp\obj\Debug\net10.0\ControleDeMedicamentosWeb.WebApp.pdb
 C:\Users\thiag\Documents\Academia 2026\Controle-de-medicamentos-web\ControleDeMedicamentosWeb.WebApp\obj\Debug\net10.0\ControleDeMedicamentosWeb.WebApp.genruntimeconfig.cache
 C:\Users\thiag\Documents\Academia 2026\Controle-de-medicamentos-web\ControleDeMedicamentosWeb.WebApp\obj\Debug\net10.0\ref\ControleDeMedicamentosWeb.WebApp.dll
+C:\Users\thiag\Documents\Academia 2026\Controle-de-medicamentos-web\ControleDeMedicamentosWeb.WebApp\bin\Debug\net10.0\dados.json
