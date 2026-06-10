@@ -6,6 +6,9 @@ using ControleMedicamentosWeb.ModuloFornecedor.Aplicacao.Servicos;
 using ControleMedicamentosWeb.ModuloPaciente.Dominio;
 using ControleMedicamentosWeb.ModuloPaciente.Infraestrutura;
 using ControleMedicamentosWeb.ModuloPaciente.Aplicacao.Servicos;
+using ControleMedicamentosWeb.ModuloMedicamento.Dominio;
+using ControleMedicamentosWeb.ModuloMedicamento.Infraestrutura;
+using ControleMedicamentosWeb.ModuloMedicamento.Aplicacao.Servicos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -67,6 +70,12 @@ builder.Services.AddScoped<IRepositorioPaciente,
 
 builder.Services.AddScoped<IServicoPaciente,
                            ServicoPaciente>();
+
+builder.Services.AddScoped<IRepositorioMedicamento,
+                           RepositorioMedicamentoEmArquivo>();
+
+builder.Services.AddScoped<IServicoMedicamento,
+                           ServicoMedicamento>();
 
 
 

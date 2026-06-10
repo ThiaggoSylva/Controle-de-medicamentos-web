@@ -1,0 +1,86 @@
+@model VisualizarMedicamentoViewModel
+
+@{
+    ViewBag.Titulo = "Excluir Medicamento";
+}
+
+<div class="card border-danger shadow-sm">
+
+    <div class="card-header bg-danger text-white">
+
+        <h3>@ViewBag.Titulo</h3>
+
+    </div>
+
+    <div class="card-body">
+
+        <p class="fs-5">
+
+            Deseja realmente excluir este medicamento?
+
+        </p>
+
+        <hr />
+
+        <dl class="row">
+
+            <dt class="col-sm-3">
+                Nome
+            </dt>
+
+            <dd class="col-sm-9">
+                @Model.Nome
+            </dd>
+
+            <dt class="col-sm-3">
+                Descrição
+            </dt>
+
+            <dd class="col-sm-9">
+                @Model.Descricao
+            </dd>
+
+            <dt class="col-sm-3">
+                Fornecedor
+            </dt>
+
+            <dd class="col-sm-9">
+                @Model.NomeFornecedor
+            </dd>
+
+            <dt class="col-sm-3">
+                Estoque
+            </dt>
+
+            <dd class="col-sm-9">
+                @Model.QuantidadeEstoque
+            </dd>
+
+        </dl>
+
+        <form asp-action="ConfirmarExclusao"
+              method="post">
+
+            <input type="hidden"
+                   name="id"
+                   value="@Model.Id" />
+
+            <button type="submit"
+                    class="btn btn-danger">
+
+                Confirmar Exclusão
+
+            </button>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+
+                Cancelar
+
+            </a>
+
+        </form>
+
+    </div>
+
+</div>
