@@ -2,6 +2,7 @@ using ControleMedicamentosWeb.ModuloFornecedor.Dominio;
 using ControleMedicamentosWeb.ModuloPaciente.Dominio;
 using ControleMedicamentosWeb.ModuloMedicamento.Dominio;
 using ControleMedicamentosWeb.ModuloFuncionario.Dominio;
+using ControleMedicamentosWeb.ModuloRequisicaoEntrada.Dominio;
 
 namespace ControleMedicamentosWeb.Compartilhado;
 
@@ -13,4 +14,6 @@ public class DadosAplicacao
     public List<Medicamento> Medicamentos { get; set; } = [];
 
     public List<Funcionario> Funcionarios { get; set; } = [];
+
+    public List<RequisicaoEntrada> RequisicoesEntrada { get; set; } = [];
 }

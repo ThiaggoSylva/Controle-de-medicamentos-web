@@ -1,0 +1,68 @@
+@model List<VisualizarRequisicaoEntradaViewModel>
+
+@{
+    ViewBag.Titulo = "Requisições de Entrada";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+
+    <h2>@ViewBag.Titulo</h2>
+
+    <a asp-action="Cadastrar"
+       class="btn btn-primary">
+
+        Nova Entrada
+
+    </a>
+
+</div>
+
+<div class="card shadow-sm">
+
+    <div class="card-body">
+
+        <table class="table table-striped table-hover">
+
+            <thead>
+
+                <tr>
+                    <th>Data</th>
+                    <th>Medicamento</th>
+                    <th>Funcionário</th>
+                    <th>Quantidade</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                @foreach (var entrada in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @entrada.Data.ToString("dd/MM/yyyy")
+                        </td>
+
+                        <td>
+                            @entrada.NomeMedicamento
+                        </td>
+
+                        <td>
+                            @entrada.NomeFuncionario
+                        </td>
+
+                        <td>
+                            @entrada.Quantidade
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>

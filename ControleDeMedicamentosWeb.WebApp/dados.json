@@ -2,5 +2,6 @@
   "Fornecedores": [],
   "Pacientes": [],
   "medicamentos": [],
-  "funcionarios": []
+  "funcionarios": [],
+  "requisicoesEntrada": []
 }

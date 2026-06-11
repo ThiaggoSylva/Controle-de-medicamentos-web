@@ -9,6 +9,12 @@ using ControleMedicamentosWeb.ModuloPaciente.Aplicacao.Servicos;
 using ControleMedicamentosWeb.ModuloMedicamento.Dominio;
 using ControleMedicamentosWeb.ModuloMedicamento.Infraestrutura;
 using ControleMedicamentosWeb.ModuloMedicamento.Aplicacao.Servicos;
+using ControleMedicamentosWeb.ModuloFuncionario.Dominio;
+using ControleMedicamentosWeb.ModuloFuncionario.Infraestrutura;
+using ControleMedicamentosWeb.ModuloFuncionario.Aplicacao.Servicos;
+using ControleMedicamentosWeb.ModuloRequisicaoEntrada.Dominio;
+using ControleMedicamentosWeb.ModuloRequisicaoEntrada.Infraestrutura;
+using ControleMedicamentosWeb.ModuloRequisicaoEntrada.Aplicacao.Servicos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,16 +54,13 @@ AppDomain.CurrentDomain.GetAssemblies());
 
 #endregion
 
-#region Fornecedor
+#region 
 
 builder.Services.AddScoped<IRepositorioFornecedor,
 RepositorioFornecedorEmArquivo>();
 
 builder.Services.AddScoped<IServicoFornecedor,
 ServicoFornecedor>();
-
-#endregion
-
 
 builder.Services.AddScoped<IRepositorioPaciente,
                            RepositorioPacienteEmArquivo>();
@@ -77,7 +80,19 @@ builder.Services.AddScoped<IRepositorioMedicamento,
 builder.Services.AddScoped<IServicoMedicamento,
                            ServicoMedicamento>();
 
+builder.Services.AddScoped<IRepositorioFuncionario,
+                           RepositorioFuncionarioEmArquivo>();
 
+builder.Services.AddScoped<IServicoFuncionario,
+                           ServicoFuncionario>();
+
+builder.Services.AddScoped<IRepositorioRequisicaoEntrada,
+                            RepositorioRequisicaoEntradaEmArquivo>();
+
+builder.Services.AddScoped<IServicoRequisicaoEntrada,
+                            ServicoRequisicaoEntrada>();
+
+#endregion
 
 var app = builder.Build();
 
