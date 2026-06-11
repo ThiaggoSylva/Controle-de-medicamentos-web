@@ -1,8 +1,8 @@
 {
   "Fornecedores": [],
   "Pacientes": [],
-  "medicamentos": [],
-  "funcionarios": [],
-  "requisicoesEntrada": [],
-  "requisicoesSaida": []
+  "Medicamentos": [],
+  "Funcionarios": [],
+  "RequisicoesEntrada": [],
+  "RequisicoesSaida": []
 }
