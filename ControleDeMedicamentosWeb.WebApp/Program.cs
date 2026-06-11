@@ -1,4 +1,5 @@
 using ControleMedicamentosWeb.Compartilhado;
+using Microsoft.AspNetCore.Mvc.Razor;
 
 using ControleMedicamentosWeb.ModuloFornecedor.Dominio;
 using ControleMedicamentosWeb.ModuloFornecedor.Infraestrutura;
@@ -15,6 +16,9 @@ using ControleMedicamentosWeb.ModuloFuncionario.Aplicacao.Servicos;
 using ControleMedicamentosWeb.ModuloRequisicaoEntrada.Dominio;
 using ControleMedicamentosWeb.ModuloRequisicaoEntrada.Infraestrutura;
 using ControleMedicamentosWeb.ModuloRequisicaoEntrada.Aplicacao.Servicos;
+using ControleMedicamentosWeb.ModuloRequisicaoSaida.Dominio;
+using ControleMedicamentosWeb.ModuloRequisicaoSaida.Infraestrutura;
+using ControleMedicamentosWeb.ModuloRequisicaoSaida.Aplicacao.Servicos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,14 +38,29 @@ builder.Services
 .AddControllersWithViews()
 .AddRazorOptions(options =>
 {
-options.ViewLocationFormats.Add(
-"/Modulo{1}/Apresentacao/Views/{1}/{0}.cshtml");
+    options.ViewLocationFormats.Add(
+    "/Modulo{1}/Apresentacao/Views/{1}/{0}.cshtml");
 
     options.ViewLocationFormats.Add(
         "/Modulo{1}/Apresentacao/Views/{0}.cshtml");
 
     options.ViewLocationFormats.Add(
         "/Compartilhado/Apresentacao/Views/{0}.cshtml");
+});
+
+builder.Services.Configure<RazorViewEngineOptions>(options =>
+{
+    options.ViewLocationFormats.Add(
+        "/ModuloEstoque/ModuloRequisicaoEntrada/Apresentacao/Views/{1}/{0}.cshtml");
+
+    options.ViewLocationFormats.Add(
+        "/ModuloEstoque/ModuloRequisicaoEntrada/Apresentacao/Views/{0}.cshtml");
+
+    options.ViewLocationFormats.Add(
+        "/ModuloEstoque/ModuloRequisicaoSaida/Apresentacao/Views/{1}/{0}.cshtml");
+
+    options.ViewLocationFormats.Add(
+        "/ModuloEstoque/ModuloRequisicaoSaida/Apresentacao/Views/{0}.cshtml");
 });
 
 
@@ -91,6 +110,12 @@ builder.Services.AddScoped<IRepositorioRequisicaoEntrada,
 
 builder.Services.AddScoped<IServicoRequisicaoEntrada,
                             ServicoRequisicaoEntrada>();
+
+builder.Services.AddScoped<IRepositorioRequisicaoSaida,
+                            RepositorioRequisicaoSaidaEmArquivo>();
+
+builder.Services.AddScoped<IServicoRequisicaoSaida,
+                            ServicoRequisicaoSaida>();
 
 #endregion
 

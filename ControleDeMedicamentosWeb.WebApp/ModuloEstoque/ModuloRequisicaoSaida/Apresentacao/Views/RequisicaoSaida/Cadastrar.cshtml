@@ -1,0 +1,127 @@
+@model CadastrarRequisicaoSaidaViewModel
+
+@{
+    ViewBag.Titulo = "Nova Requisição de Saída";
+}
+
+<div class="card shadow-sm">
+
+    <div class="card-header">
+
+        <h3>@ViewBag.Titulo</h3>
+
+    </div>
+
+    <div class="card-body">
+
+        <form method="post">
+
+            <div asp-validation-summary="All"
+                 class="text-danger mb-3">
+            </div>
+
+            <div class="mb-3">
+
+                <label asp-for="Data"
+                       class="form-label">
+                </label>
+
+                <input asp-for="Data"
+                       type="date"
+                       class="form-control" />
+
+                <span asp-validation-for="Data"
+                      class="text-danger">
+                </span>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label asp-for="PacienteId"
+                       class="form-label">
+
+                    Paciente
+
+                </label>
+
+                <select asp-for="PacienteId"
+                        asp-items="Model.Pacientes"
+                        class="form-select">
+
+                    <option value="">
+                        Selecione um paciente
+                    </option>
+
+                </select>
+
+                <span asp-validation-for="PacienteId"
+                      class="text-danger">
+                </span>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label asp-for="MedicamentoId"
+                       class="form-label">
+
+                    Medicamento
+
+                </label>
+
+                <select asp-for="MedicamentoId"
+                        asp-items="Model.Medicamentos"
+                        class="form-select">
+
+                    <option value="">
+                        Selecione um medicamento
+                    </option>
+
+                </select>
+
+                <span asp-validation-for="MedicamentoId"
+                      class="text-danger">
+                </span>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label asp-for="Quantidade"
+                       class="form-label">
+                </label>
+
+                <input asp-for="Quantidade"
+                       class="form-control" />
+
+                <span asp-validation-for="Quantidade"
+                      class="text-danger">
+                </span>
+
+            </div>
+
+            <button type="submit"
+                    class="btn btn-primary">
+
+                Salvar
+
+            </button>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+
+                Voltar
+
+            </a>
+
+        </form>
+
+    </div>
+
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -3,5 +3,6 @@
   "Pacientes": [],
   "medicamentos": [],
   "funcionarios": [],
-  "requisicoesEntrada": []
+  "requisicoesEntrada": [],
+  "requisicoesSaida": []
 }

@@ -1,0 +1,68 @@
+@model List<VisualizarRequisicaoSaidaViewModel>
+
+@{
+    ViewBag.Titulo = "Requisições de Saída";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+
+    <h2>@ViewBag.Titulo</h2>
+
+    <a asp-action="Cadastrar"
+       class="btn btn-primary">
+
+        Nova Saída
+
+    </a>
+
+</div>
+
+<div class="card shadow-sm">
+
+    <div class="card-body">
+
+        <table class="table table-striped table-hover">
+
+            <thead>
+
+                <tr>
+                    <th>Data</th>
+                    <th>Paciente</th>
+                    <th>Medicamento</th>
+                    <th>Quantidade</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                @foreach (var saida in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @saida.Data.ToString("dd/MM/yyyy")
+                        </td>
+
+                        <td>
+                            @saida.NomePaciente
+                        </td>
+
+                        <td>
+                            @saida.NomeMedicamento
+                        </td>
+
+                        <td>
+                            @saida.Quantidade
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>

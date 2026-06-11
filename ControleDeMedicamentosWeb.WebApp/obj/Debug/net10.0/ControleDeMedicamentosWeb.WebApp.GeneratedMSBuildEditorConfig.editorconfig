@@ -54,6 +54,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TW9kdWxvRXN0b3F1ZVxNb2R1bG9SZXF1aXNpY2FvRW50cmFkYVxBcHJlc2VudGFjYW9cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloEstoque/ModuloRequisicaoSaida/Apresentacao/Views/RequisicaoSaida/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvRXN0b3F1ZVxNb2R1bG9SZXF1aXNpY2FvU2FpZGFcQXByZXNlbnRhY2FvXFZpZXdzXFJlcXVpc2ljYW9TYWlkYVxDYWRhc3RyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloEstoque/ModuloRequisicaoSaida/Apresentacao/Views/RequisicaoSaida/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvRXN0b3F1ZVxNb2R1bG9SZXF1aXNpY2FvU2FpZGFcQXByZXNlbnRhY2FvXFZpZXdzXFJlcXVpc2ljYW9TYWlkYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloEstoque/ModuloRequisicaoSaida/Apresentacao/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvRXN0b3F1ZVxNb2R1bG9SZXF1aXNpY2FvU2FpZGFcQXByZXNlbnRhY2FvXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloEstoque/ModuloRequisicaoSaida/Apresentacao/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kdWxvRXN0b3F1ZVxNb2R1bG9SZXF1aXNpY2FvU2FpZGFcQXByZXNlbnRhY2FvXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/thiag/Documents/Academia 2026/Controle-de-medicamentos-web/ControleDeMedicamentosWeb.WebApp/ModuloFornecedor/Apresentacao/Views/Fornecedor/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = TW9kdWxvRm9ybmVjZWRvclxBcHJlc2VudGFjYW9cVmlld3NcRm9ybmVjZWRvclxDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
